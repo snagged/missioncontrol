@@ -1,0 +1,43 @@
+<robot
+  name="bluefin body (Inaccurate measurements).SLDPRT">
+  <link
+    name="bluefin_body">
+    <inertial>
+      <origin
+        xyz="-0.24334 1.3914E-05 0.00041233"
+        rpy="0 0 0" />
+      <mass
+        value="203.19" />
+      <inertia
+        ixx="2.29339113671198"
+        ixy="0.115013395855231"
+        ixz="0.000261436448721389"
+        iyy="3.06353490334187E-06"
+        iyz="-199.460300995737"
+        izz="-3.06353487891949E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="1.5707963267949 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bluefin_body/meshes/bluefin_body.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69804 0.69804 0.69804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bluefin_body/meshes/bluefin_body.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

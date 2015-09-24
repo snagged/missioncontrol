@@ -1,0 +1,43 @@
+<robot
+  name="KAYAK12.SLDPRT">
+  <link
+    name="KAYAK12.SLDPRT">
+    <inertial>
+      <origin
+        xyz="2.1344 -2.47739999999779E-05 0.36121"
+        rpy="0 0 0" />
+      <mass
+        value="9.4611" />
+      <inertia
+        ixx="0.378189670554747"
+        ixy="0.174639635790518"
+        ixz="-0.00332302715419539"
+        iyy="-2.70166385352447E-05"
+        iyz="-9.63444407011515"
+        izz="2.70166385364343E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="1.5707963267949 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://KAYAK12.SLDPRT/meshes/KAYAK12.SLDPRT.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="2.1344 -2.47739999999779E-05 0.36121"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://KAYAK12.SLDPRT/meshes/KAYAK12.SLDPRT.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

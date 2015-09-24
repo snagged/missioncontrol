@@ -1,0 +1,510 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="underwater">
+    
+<!--    <physics type="ode">
+      <real_time_update_rate>2000</real_time_update_rate>
+    </physics>-->
+    
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    
+  <model name='KAYAK' >
+    <static>false</static>
+    <pose>0 60 0 0 0 0</pose>
+    <link name='kayak_ros'>
+      <pose> 0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>2.11983 0.30339 0 0 -0 0</pose>
+        <mass>20.4611</mass>
+        <inertia>
+	  <ixx>1.1798105436</ixx>
+          <ixy>0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>126.3417918565</iyy>
+          <iyz>0</iyz>
+          <izz>126.3417918565</izz>
+	  
+        </inertia>
+      </inertial>
+      <collision name='kayak_ros_collision'>
+        <pose>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://KAYAK12.SLDPRT/meshes/KAYAK12.SLDPRT.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='kayak_ros_visual'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://KAYAK12.SLDPRT/meshes/KAYAK12.SLDPRT.STL</uri>
+          </mesh>
+        </geometry>
+	<material>
+	  <ambient>0.5 0.5 0.2 1 </ambient>
+	</material>
+      </visual>
+      <velocity_decay>
+	<angular> 0.001</angular>
+	<linear> 0.001</linear>
+      </velocity_decay>
+      
+      <sensor name="right_sonar" type="ray">
+	<pose>1.8 0 0.1 0 1.5708 0</pose>
+	<ray>
+          <scan>
+            <horizontal>
+              <samples>640</samples>
+              <resolution>1</resolution>
+              <min_angle>0.1</min_angle>
+              <max_angle>1</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.16</min>
+            <max>7</max>
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+	
+	<always_on>1</always_on>
+	<update_rate>30</update_rate>
+	<visualize>1</visualize>
+      </sensor>
+      <sensor name="left_sonar" type="ray">
+	<pose>1.8 0 0.1 0 1.5708 0</pose>
+	<ray>
+          <scan>
+            <horizontal>
+              <samples>640</samples>
+              <resolution>1</resolution>
+              <min_angle>-1</min_angle>
+              <max_angle>-0.1</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.16</min>
+            <max>7</max>
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+	
+	<always_on>1</always_on>
+	<update_rate>30</update_rate>
+	<visualize>1</visualize>
+      </sensor>
+      
+      
+      
+    </link>  
+        <plugin name="relative_force_engine" filename="librelative_force_engine.so">
+      <descriptionParam>robot_description</descriptionParam>
+      <link>kayak_ros</link>
+    </plugin>
+    
+  </model>
+ 
+  <model name="terrain">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://shipwreck/terrain.dae</uri>
+          </mesh>
+        </geometry>
+	<laser_retro>30</laser_retro>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://shipwreck/terrain.dae</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+  </model>
+  
+    <model name="pipe">
+      <pose> 10 0 -13.15 0 1.5708 0</pose>
+    <static>true</static>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+	    <cylinder>
+	      <length>140</length>
+	      <radius>0.15</radius>
+	    </cylinder>
+        </geometry>
+	<laser_retro>70</laser_retro>
+	<material>
+	  <ambient>0 0 0 0</ambient>
+	</material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+	    <cylinder>
+	      <length>140</length>
+	      <radius>0.15</radius>
+	    </cylinder>
+	  </geometry>
+      </collision>
+    </link>
+  </model>
+
+  <model name="Hydro_Camel">
+    <pose>-10 10 -4 0 -0 3.14</pose>
+   <link name='Hydro_Camel_2'>
+      <pose>0 0 0 0 -0 0</pose>
+      <inertial>
+        <!--<pose>-0.023145 2.6183e-06 0.0002058 0 -0 0</pose>-->
+	<pose>1.16928 0.165 0.165 0 0 0</pose>
+        <mass>100.61</mass>
+        <inertia>
+	  <ixx>1.1798105436</ixx>
+          <ixy>0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>126.3417918565</iyy>
+          <iyz>0</iyz>
+          <izz>126.3417918565</izz>
+	</inertia>
+      </inertial>
+      <collision name='Hydro_Camel_2_collision'>
+        <pose>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+	    <uri>model://Hydro Camel 2/Hydro_Camel_2/meshes/Hydro_Camel_2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='Hydro_Camel_2_visual'>
+        <pose>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Hydro Camel 2/Hydro_Camel_2/meshes/Hydro_Camel_2.STL</uri>
+          </mesh>
+        </geometry>
+	<material>
+	  <emissive>0.3 0 0 1</emissive>
+	  <diffuse>0.4 0 0 1</diffuse>
+	  <ambient>0.8 0 0 1</ambient>
+	  <specular>0.5 0 0 1</specular>
+	</material>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0.001</angular>
+      </velocity_decay>
+      
+      <!-- sonar for visual purposes only  -->
+      <sensor name="forward_sonar_visual" type="sonar">
+	<pose>-1 0 0.1 0 1.5708 0</pose>
+	<sonar>
+	  <min>0</min>
+	  <max>6</max>
+	  <radius>0.7</radius>
+	</sonar>
+	<always_on>1</always_on>
+	<update_rate>30</update_rate>
+	<visualize>1</visualize>
+      </sensor>    
+      
+    </link>
+    <plugin name="relative_force_engine" filename="librelative_force_engine.so">
+      <descriptionParam>robot_description</descriptionParam>
+      <link>Hydro_Camel_2</link>
+    </plugin>
+    
+    <plugin name="seven_forces_engine" filename="libseven_engines_force.so">
+      <link>Hydro_Camel_2</link>
+      <rx>1</rx> 
+      <ry>1</ry> 
+      <rz>1</rz>
+      <rroll>2</rroll>
+      <default_command_timeout_period>2</default_command_timeout_period> 
+    </plugin>
+    
+  </model>
+  
+  
+  
+  
+  <model name='blackbox'>
+    <link name='link'>
+      <pose>5 7 -13.25 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>4</mass>
+        <inertia>
+          <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bbox/blackbox_uib_trimesh.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://bbox/blackbox_uib_trimesh.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0.005</angular>
+      </velocity_decay>
+    </link>   
+  </model>
+
+  
+  
+  
+  <model name='bluefin'>
+    <pose>80 1.4 -1 0 0 0</pose>
+    <link name='bluefin_body'>
+      <pose>0 0 0 0 -0 0</pose>
+      <inertial>
+	<!--<pose>-0.24334 1.3914e-05 0.00041233 0 -0 0</pose>-->
+	<pose>-0.24334 0 0 0 -0 0</pose> 
+        <mass>193.19</mass>
+        <inertia>
+	  <ixx>2.3596210872</ixx>
+          <ixy>0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>252.683583713</iyy>
+          <iyz>0</iyz>
+          <izz>252.683583713</izz>
+        </inertia>
+      </inertial>
+      
+      <collision name='bluefin_body_collision'>
+        <pose>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+	    <uri>model://Bluefin/body/bluefin_body/meshes/bluefin_body.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      
+      <visual name='bluefin_body_visual'>
+        <pose>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Bluefin/body/bluefin_body/meshes/bluefin_body.STL</uri>
+          </mesh>
+        </geometry>
+	<material>
+	  <ambient>0.5 0.5 0.2 1 </ambient>
+	</material>
+      </visual>
+      
+      
+      <velocity_decay>
+	<angular>0.005</angular>
+      </velocity_decay>
+      
+      <!-- these two sensors are for visual purposes only. the data is unused -->
+      <sensor name="right_sonar" type="ray">
+	<pose>-0.8 0 0 0 1.5708 0</pose>
+	<ray>
+          <scan>
+            <horizontal>
+              <samples>640</samples>
+              <resolution>1</resolution>
+              <min_angle>0.1</min_angle>
+              <max_angle>1</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.16</min>
+            <max>15</max>
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+	<always_on>1</always_on>
+	<update_rate>30</update_rate>
+	<visualize>1</visualize>
+      </sensor>
+      <sensor name="left_sonar" type="ray">
+	<pose>-0.8 0 0 0 1.5708 0</pose>
+	<ray>
+          <scan>
+            <horizontal>
+              <samples>640</samples>
+              <resolution>1</resolution>
+              <min_angle>-1</min_angle>
+              <max_angle>-0.1</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.16</min>
+            <max>15</max>
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+	
+	<always_on>1</always_on>
+	<update_rate>30</update_rate>
+	<visualize>1</visualize>
+      </sensor>
+
+    </link>
+  
+    
+    <link name="propeller">
+      <pose>1.70 0 0 1.5708 -0 0</pose>
+      <inertial>
+	<mass>10.0</mass>
+	<inertia>
+	  <ixx>1</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1</iyy>
+          <iyz>0</iyz>
+          <izz>1</izz>
+        </inertia>
+      </inertial>
+      <collision name='bluefin_propeller_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+	    <uri>model://Bluefin/propelor/bluefin_propelor/meshes/bluefin_propelor.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='bluefin_propeller_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://Bluefin/propelor/bluefin_propelor/meshes/bluefin_propelor.STL</uri>
+          </mesh>
+        </geometry>
+	<material>
+	  <ambient>0 1 0 1 </ambient>
+	</material>
+      </visual>
+      <velocity_decay>
+	<angular>0.005</angular>
+      </velocity_decay>
+    </link>>
+    
+    <joint name="body_propeller_joint" type="revolute">
+      <parent>bluefin_body</parent>
+      <child>propeller</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+	<xyz>1 0 0</xyz>
+	<dynamics>
+	  <damping>1000</damping>
+	</dynamics>
+	<limit>
+	  <lower>-0.3</lower>
+	  <upper>0.3</upper>
+	</limit>
+      </axis>
+    </joint>
+    
+    
+    <plugin name="propeller_engine" filename="libpropeller_engine.so">
+      <descriptionParam>robot_description</descriptionParam>
+      <link>propeller</link>
+      <joint>body_propeller_joint</joint>
+    </plugin>
+    
+    <plugin name="relative_force_engine" filename="librelative_force_engine.so">
+      <descriptionParam>robot_description</descriptionParam>
+      <link>bluefin_body</link>
+    </plugin>
+    
+  </model>
+
+  
+  
+  <model name="water3">
+    <static>true</static>
+    <pose> 0 0 -100 0 0 0</pose>
+    <link name="water_link">
+      <visual name="water_visual">
+	<transparency>0.5 </transparency>
+	<geometry>
+	  <box>
+	    <size>200 200 200</size>
+	  </box>
+	</geometry>
+	  <material>
+	    <ambient>0 0 1 0.01 </ambient>
+	  </material>      
+      </visual>
+    </link>
+  </model>
+  
+  
+  <model name="boulder">
+    <static>true</static>
+    <pose>10 63 -15.5 0 0 0</pose>
+    <link name="boulder_link">
+      <visual name="boulder_visual">
+	<geometry>
+	  <mesh>
+	     <uri>model://Rock1/Rock1.dae</uri>
+	     <scale>9 9 9</scale>
+	  </mesh>
+	</geometry>
+      </visual>
+      <collision name="boulder_collision">
+	<geometry>
+	  <mesh>
+	     <uri>model://Rock1/Rock1.dae</uri>
+	     <scale>9 9 9</scale>
+	  </mesh>
+	</geometry>
+	<laser_retro>150</laser_retro>
+      </collision>
+    </link>
+  </model>  
+  
+  
+    <!-- buoyancy plugin -->
+    <plugin name="freefloating_gazebo_fluid" filename="libfreefloating_gazebo_fluid.so">
+              <descriptionParam>robot_description</descriptionParam>
+              <fluidTopic>current</fluidTopic>
+              <alwaysOn>true</alwaysOn>
+              <surface>0 0 0</surface>
+              <updateRate>.001</updateRate>
+	      <confFile>buoyancy.conf</confFile>
+    </plugin>
+  </world>
+</sdf>

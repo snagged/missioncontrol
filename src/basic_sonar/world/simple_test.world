@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="test">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+  
+  <model name="scanning_model">
+    <pose>0 0 2 0 0 0</pose>
+    <static>true</static>
+    <link name='body_frame'>
+      <visual name='body_frame_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+	  <box>
+	    <size>1 1 1</size>
+	  </box>
+        </geometry>
+      </visual>
+      <sensor name="forward_sonar" type="ray">
+	<pose>1 0 0 0 0 0</pose>
+	<ray>
+          <scan>
+            <horizontal>
+              <samples>30</samples>
+              <resolution>1</resolution>
+              <min_angle>-0.3</min_angle>
+              <max_angle>0.3</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>2</samples>
+              <resolution>1</resolution>
+              <min_angle>-0.01</min_angle>
+	      <max_angle>0.01</max_angle>
+	    </vertical>
+          </scan>
+          <range>
+            <min>0.1</min>
+            <max>15</max>
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+	
+	  <always_on>1</always_on>
+	  <update_rate>30</update_rate>
+	  <visualize>1</visualize>
+      </sensor>
+    </link>   
+  </model>
+
+  <model name="scanned_box">
+    <static>true</static>
+    <pose>5.6 1.1 2.1 0 0 0</pose> <!-- in this pose the object is not detected by gpu_ray-->
+    <!-- NOTE: when moving to pose (6.09 0.84 2.1 0 0 0) the object blocks the whole gpu_ray, although if switched to ray, it blocks only part of the scan-->
+    
+    <link name="scanned_box_link">
+      <visual name="scanned_box_visual">
+	<geometry>
+	  <box>
+	    <size>2 2 2</size>
+	  </box>
+	</geometry>
+	<laser_retro>200</laser_retro>
+      </visual>
+      <collision name="scanned_box_collision">
+	<geometry>
+	  <box>
+	    <size>2 2 2</size>
+	  </box>
+	</geometry>
+	<laser_retro>200</laser_retro>
+      </collision>      
+    </link>
+  </model> 
+</sdf>

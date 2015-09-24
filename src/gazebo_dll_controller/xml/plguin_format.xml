@@ -1,0 +1,16 @@
+<plugin name="gazebo_dll_controller" filename="libgazebo_dll_controller.so">
+      <descriptionParam>controller</descriptionParam>
+      <bluefin>
+	<dll>bluefin.so</dll>
+	<topic>gazebo/propeller_engine/bluefin</topic>
+	<model>bluefin</model>
+	<link>bluefin_propeller</link>
+	<joint>body_propeller_joint</joint>
+      </bluefin>
+      <hydroCamel>
+	<dll>hydro.so</dll>
+	<topic>gazebo/seven_force_engine/Hydro_Camel</topic>
+	<model>Hydro_Camel</model>
+	<link>Hydro_Camel_2</link>
+      </hydroCamel>
+</plugin>

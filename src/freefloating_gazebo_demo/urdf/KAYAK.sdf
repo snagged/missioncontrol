@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+
+<sdf version='1.4'>
+  <model name='KAYAK'>
+    <static>false</static>
+    <link name='kayak_ros'>
+      <pose>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>2.1344 -2.4774e-05 0.36121 0 -0 0</pose>
+        <mass>9.4611</mass>
+        <inertia>
+          <ixx>0.37819</ixx>
+          <ixy>0.17464</ixy>
+          <ixz>-0.00332303</ixz>
+          <iyy>-2.70166e-05</iyy>
+          <iyz>-9.63444</iyz>
+          <izz>2.70166e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='kayak_ros_collision'>
+        <pose>0 0 1.5708 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://kayak_ros/meshes/kayak_ros.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='kayak_ros_visual'>
+        <pose>1.5708 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://kayak_ros/meshes/kayak_ros.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
+

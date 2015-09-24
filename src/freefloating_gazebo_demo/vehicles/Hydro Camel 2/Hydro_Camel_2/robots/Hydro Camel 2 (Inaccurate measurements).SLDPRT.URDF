@@ -1,0 +1,43 @@
+<robot
+  name="Hydro Camel 2 (Inaccurate measurements).SLDPRT">
+  <link
+    name="Hydro_Camel_2">
+    <inertial>
+      <origin
+        xyz="-0.023145 2.61830000000001E-06 0.0002058"
+        rpy="0 0 0" />
+      <mass
+        value="100.61" />
+      <inertia
+        ixx="1.42694061945462"
+        ixy="0.00868780942309498"
+        ixz="-0.000117114508854445"
+        iyy="1.62736318807746E-07"
+        iyz="-38.6232719537211"
+        izz="-1.6273631407209E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="1.5707963267949 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hydro_Camel_2/meshes/Hydro_Camel_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69804 0.69804 0.69804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Hydro_Camel_2/meshes/Hydro_Camel_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

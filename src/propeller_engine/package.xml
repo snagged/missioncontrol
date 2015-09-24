@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>propeller_engine</name>
+  <version>0.0.0</version>
+  <description>The propeller_engine package</description>
+
+  <maintainer email="yotamd@post.bgu.ac.il">YotamD</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>ros_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>ros_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+
+  <export>
+  </export>
+</package>

@@ -1,0 +1,16 @@
+Installation tutorial:
+1. place src folder in local catkin_ws folder
+2. run install_script from local catkin_ws directory.
+
+to run the worlds run:
+roslaunch gazebo_worlds main_launch_file.launch
+
+to add new waypoint 
+rostopic pub /newWaypoint gazebo_dll_controller/command
+
+to run control node
+rosrun ros_control_node_example ros_control_node_example
+
+to run msg relay
+rosrun msg_relay msg_relay
+

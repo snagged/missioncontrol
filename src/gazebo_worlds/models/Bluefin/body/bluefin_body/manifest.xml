@@ -1,0 +1,6 @@
+<package>
+  <description brief="bluefin body (Inaccurate measurements).SLDPRT">bluefin body (Inaccurate measurements).SLDPRT</description>
+  <depend package="gazebo" />
+  <author>me</author>
+  <license>BSD</license>
+</package>

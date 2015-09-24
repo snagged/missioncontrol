@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package>
+  <name>seven_engines_force</name>
+  <version>0.0.0</version>
+  <description>The seven_engines_force package</description>
+ <maintainer email="lar-sub@todo.todo">lar-sub</maintainer>
+
+
+  <license>TODO</license>
+
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>ros_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>  
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>ros_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- You can specify that this package is a metapackage here: -->
+    <!-- <metapackage/> -->
+
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>
+

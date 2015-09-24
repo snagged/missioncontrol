@@ -1,0 +1,41 @@
+<sdf version='1.4'>
+  <model name='girona500'>
+    <link name='base_link'>
+      <pose>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>95</mass>
+        <inertia>
+          <ixx>100</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>100</iyy>
+          <iyz>0</iyz>
+          <izz>100</izz>
+        </inertia>
+      </inertial>
+      <visual name='base_link_visual'>
+        <pose>-0.2 0 0.75 -1.57 -4.33681e-19 3.14</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/lar1/.uwsim/data/robot/GIRONA500/g500_March11.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_visual_part0'>
+        <pose>0 0 0.95 3.14 -0 3.14</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/lar1/.uwsim/data/robot/ARM5E/ARM5E_part0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <velocity_decay>
+        <linear>0</linear>
+        <angular>0</angular>
+      </velocity_decay>
+    </link>
+  </model>
+</sdf>

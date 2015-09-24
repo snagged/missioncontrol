@@ -1,0 +1,735 @@
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+ERROR: Unable to communicate with master!
+Gazebo multi-robot simulator, version 1.9.6
+Copyright (C) 2014 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+Gazebo multi-robot simulator, version 1.9.6
+Copyright (C) 2014 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+[1;32mMsg[0m Waiting for master.[0m[ INFO] [1416819021.123637296]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[ INFO] [1416819021.124043935]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[1;32mMsg[0m Waiting for master
+[1;32mMsg[0m Connected to gazebo master @ http://127.0.0.1:11345
+[1;32mMsg[0m Publicized address: 132.72.52.245
+
+[1;32mMsg[0m Connected to gazebo master @ http://127.0.0.1:11345
+[1;32mMsg[0m Publicized address: 132.72.52.245
+[0m[ INFO] [1416819025.293407225]: Loading freefloating_fluid plugin[0m
+[0m[ INFO] [1416819025.295507386]: Loaded freefloating_fluid plugin.[0m
+[0m[ INFO] [1416819066.449777382, 0.001000000]: doc value: settings, conf value: conf[0m
+[0m[ INFO] [1416819066.478520228, 0.022000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[ INFO] [1416819066.504394094, 0.047000000]: Physics dynamic reconfigure ready.[0m
+... logging to /home/lar-sub/.ros/log/ebd7ec6c-73b6-11e4-b0bf-d050991abda2/roslaunch-larsub-pc-450.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/lar-sub/catkin_ws/src/freefloating_gazebo_demo/launch/main_launch_file.launch
+[1mstarted roslaunch server http://larsub-pc:49510/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro
+ * /rosversion
+ * /use_sim_time
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+    gazebo_gui (gazebo_ros/gzclient)
+
+auto-starting new master
+[1mprocess[master]: started with pid [469][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/lar-sub/catkin_ws/src/freefloating_gazebo_demo/launch/main_launch_file.launch http://localhost:11311
+[1msetting /run_id to ebd7ec6c-73b6-11e4-b0bf-d050991abda2[0m
+[1mprocess[rosout-1]: started with pid [482][0m
+started core service [/rosout]
+[1mprocess[gazebo-2]: started with pid [496][0m
+[1mprocess[gazebo_gui-3]: started with pid [502][0m
+[1m[gazebo_gui-3] process has finished cleanly
+log file: /home/lar-sub/.ros/log/ebd7ec6c-73b6-11e4-b0bf-d050991abda2/gazebo_gui-3*.log[0m
+[gazebo-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 83, in move_object_from_parameters
+    sleep(max(forceDuration, torqueDuration))
+KeyboardInterrupt
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin_3
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 83, in move_object_from_parameters
+    sleep(max(forceDuration, torqueDuration))
+KeyboardInterrupt
+movement_script_bluefin
+movement_script_bluefin_2
+movement_script_bluefin_3
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 83, in move_object_from_parameters
+    sleep(max(forceDuration, torqueDuration))
+KeyboardInterrupt
+movement_script_bluefin_2
+movement_script_bluefin
+movement_script_bluefin_3
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 83, in move_object_from_parameters
+    sleep(max(forceDuration, torqueDuration))
+KeyboardInterrupt
+movement_script_bluefin_3
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 83, in move_object_from_parameters
+    sleep(max(forceDuration, torqueDuration))
+KeyboardInterrupt
+movement_script_bluefin_2
+movement_script_bluefin
+movement_script_bluefin
+movement_script_bluefin_2
+movement_script_bluefin_3
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 83, in move_object_from_parameters
+    sleep(max(forceDuration, torqueDuration))
+KeyboardInterrupt
+movement_script_bluefin_2
+movement_script_bluefin
+movement_script_bluefin_3
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 83, in move_object_from_parameters
+    sleep(max(forceDuration, torqueDuration))
+KeyboardInterrupt
+movement_script_bluefin
+movement_script_bluefin_2
+movement_script_bluefin_3
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 83, in move_object_from_parameters
+    sleep(max(forceDuration, torqueDuration))
+KeyboardInterrupt
+movement_script_bluefin_2
+movement_script_bluefin
+movement_script_bluefin_2
+movement_script_bluefin_3
+movement_script_bluefin
+movement_script_bluefin_2
+movement_script_bluefin
+movement_script_bluefin_3
+movement_script_bluefin_3
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 83, in move_object_from_parameters
+    sleep(max(forceDuration, torqueDuration))
+KeyboardInterrupt
+movement_script_bluefin_2
+movement_script_bluefin
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 83, in move_object_from_parameters
+    sleep(max(forceDuration, torqueDuration))
+KeyboardInterrupt
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 83, in move_object_from_parameters
+    sleep(max(forceDuration, torqueDuration))
+KeyboardInterrupt
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_bluefin
+movement_script_test
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range
+movement_script_hydrocamel
+Traceback (most recent call last):
+  File "moving_script.py", line 106, in <module>
+    start_script(sys.argv)
+  File "moving_script.py", line 31, in start_script
+    move_object_from_file(params[1][len("--filename="):])
+  File "moving_script.py", line 49, in move_object_from_file
+    else: move_object_from_parameters(listOfParams)
+  File "moving_script.py", line 64, in move_object_from_parameters
+    force = (float(listOfParams[1]), float(listOfParams[2]), float(listOfParams[3]))
+IndexError: list index out of range

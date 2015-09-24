@@ -1,0 +1,6 @@
+<package>
+  <description brief="bluefin propelor (Inaccurate measurements) .SLDPRT">bluefin propelor (Inaccurate measurements) .SLDPRT</description>
+  <depend package="gazebo" />
+  <author>me</author>
+  <license>BSD</license>
+</package>

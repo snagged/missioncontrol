@@ -1,0 +1,43 @@
+<robot
+  name="bluefin propelor (Inaccurate measurements) .SLDPRT">
+  <link
+    name="bluefin_propelor">
+    <inertial>
+      <origin
+        xyz="0.048119 -4.7017E-06 -1.6562E-07"
+        rpy="0 0 0" />
+      <mass
+        value="1.3001" />
+      <inertia
+        ixx="0.0121036631410029"
+        ixy="-4.77313063700589E-09"
+        ixz="1.88752847595144E-08"
+        iyy="2.06194330802076E-08"
+        iyz="-0.00801077839668997"
+        izz="-2.06194330792265E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="1.5707963267949 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bluefin_propelor/meshes/bluefin_propelor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.69804 0.69804 0.69804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bluefin_propelor/meshes/bluefin_propelor.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

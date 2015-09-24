@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="paused" default="false"/>
+    <arg name="uwsim" default="true"/>
+
+    <!-- Launch Gazebo with underwater world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="gui" value="true" if="$(arg uwsim)"/>
+        <arg name="paused" value="$(arg paused)"/>
+        <arg name="world_name" value="$(find basic_sonar)/world/underwater_test.world"/>
+    </include>
+
+</launch>

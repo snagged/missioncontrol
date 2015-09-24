@@ -1,0 +1,5 @@
+bluefin 50 50 0 0 0 0 0
+sleep 1
+bluefin -100 0 0 0 0 0 0
+sleep 10
+bluefin -100 0 30 0 220 0 0

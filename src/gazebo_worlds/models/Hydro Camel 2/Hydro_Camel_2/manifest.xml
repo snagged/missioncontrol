@@ -1,0 +1,6 @@
+<package>
+  <description brief="Hydro Camel 2 (Inaccurate measurements).SLDPRT">Hydro Camel 2 (Inaccurate measurements).SLDPRT</description>
+  <depend package="gazebo" />
+  <author>me</author>
+  <license>BSD</license>
+</package>
